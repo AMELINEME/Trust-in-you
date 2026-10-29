@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Trust in You : une startup imaginée à L-Impact pour aider les adolescentes de 11 à 18 ans à oser prendre la parole. Découvrez Talk to Win.">
+<title>Trust in You — La confiance commence par une voix</title>
+<style>
+:root{--violet:#6d28d9;--pink:#e83e94;--ink:#24143c;--muted:#675b7b;--bg:#faf6ff;--line:#e8daf6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible{outline:3px solid var(--violet);outline-offset:4px}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 22px;gap:18px;flex-wrap:wrap}
+.brand{font-size:22px;font-weight:850;letter-spacing:-.7px}.brand span{color:var(--violet)}nav{display:flex;gap:19px;align-items:center;flex-wrap:wrap;font-size:14px;font-weight:650}
+.navlink{color:var(--muted)}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:13px;background:var(--violet);color:white;padding:14px 22px;font-weight:800;box-shadow:0 8px 24px #6d28d922;transition:transform .2s}
+.button:hover{transform:translateY(-2px)}.button.alt{background:#fff;color:var(--violet);border:1px solid #ded0f6;box-shadow:none}
+section{max-width:1150px;margin:0 auto;padding:76px 22px}.hero{display:grid;grid-template-columns:1.12fr .88fr;gap:40px;align-items:center;min-height:590px}
+.eyebrow{display:inline-block;background:#f1e8ff;border:1px solid #e4d4ff;border-radius:999px;padding:7px 14px;color:#5c2fa6;font-weight:800;font-size:13px}
+h1{font-size:clamp(38px,5.4vw,72px);line-height:1.08;letter-spacing:-2.5px;margin:22px 0}h1 em{font-style:normal;color:var(--violet)}
+.lead{font-size:clamp(17px,2vw,22px);color:var(--muted);max-width:590px}h2{font-size:clamp(29px,3.5vw,45px);line-height:1.16;letter-spacing:-1px;margin:12px 0 18px}
+.sub{color:var(--muted);font-size:18px;max-width:780px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.visual{border:1px solid #e3d4f7;border-radius:32px;background:linear-gradient(145deg,#f6e7ff,#fff0f8 57%,#ecf9f5);min-height:380px;position:relative;overflow:hidden;display:grid;place-items:center;padding:28px;box-shadow:0 22px 65px #58368c15}
+.halo{position:absolute;width:310px;height:310px;background:#dec9ff88;filter:blur(55px);border-radius:50%;right:-100px;top:-120px}
+.phone{position:relative;width:230px;border:8px solid #281d41;border-radius:34px;background:white;box-shadow:15px 22px 35px #46386f30;padding:22px 18px;transform:rotate(-6deg)}
+.phone .pill{background:#efe5fe;color:#5e33aa;font-weight:800;font-size:12px;padding:8px;border-radius:10px;text-align:center}
+.phone h3{font-size:28px;line-height:1.12;margin:18px 0 9px}.phone p{font-size:12px;color:#65587c}
+.mini{background:#f6ecff;border-radius:12px;padding:12px;font-weight:750;color:#5d329d;margin:14px 0}.progress{height:9px;background:#ebdefa;border-radius:10px;overflow:hidden}.progress b{display:block;width:64%;height:100%;background:var(--violet)}
+.float{position:absolute;background:white;padding:12px 15px;border:1px solid #ebdbf7;border-radius:16px;box-shadow:0 10px 24px #58368c18;font-size:14px;font-weight:800}.float.one{left:4%;top:25%}.float.two{right:4%;bottom:17%}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:0 8px 25px #432f6608}.card .emoji{font-size:32px}.card h3{margin:13px 0 8px;font-size:21px}.card p{color:var(--muted);margin:0}
+.band{background:white;border-block:1px solid var(--line)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.statement{background:linear-gradient(140deg,#f1e9ff,#ffeaf5);border:1px solid #ebdaf9;padding:34px;border-radius:28px;font-size:clamp(22px,2.6vw,34px);font-weight:850;line-height:1.25}
+.steps{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.step{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 15px;font-weight:750;font-size:14px}
+.callout{background:linear-gradient(110deg,#4f249d,#8b43b3);border-radius:28px;padding:46px;color:white;text-align:center}.callout h2{color:white}.callout p{color:#f2e8ff}.callout .button{background:white;color:#5524a0}
+footer{background:#fff;border-top:1px solid var(--line);padding:30px 22px;text-align:center;color:var(--muted);font-size:13px}
+@media(max-width:800px){.hero,.grid2{grid-template-columns:1fr}.hero{padding-top:48px}.cards{grid-template-columns:1fr}.visual{min-height:350px}section{padding:55px 20px}.float.one{left:2%}.float.two{right:1%}.nav{align-items:flex-start}nav{gap:12px}h1{letter-spacing:-1.3px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+</style></head>
+<body>
+<header><div class="nav"><a class="brand" href="#accueil">✦ Trust <span>in You</span></a><nav aria-label="Navigation principale"><a class="navlink" href="#mission">Notre mission</a><a class="navlink" href="#solution">Notre solution</a><a class="navlink" href="#vision">Notre vision</a><a class="button" href="talk-to-win.html">Découvrir l'application ↗</a></nav></div></header>
+<main>
+<section class="hero" id="accueil">
+<div><span class="eyebrow">Startup née à L-Impact · Startup for Girls</span>
+<h1>La confiance commence par <em>une voix.</em></h1>
+<p class="lead">Trust in You imagine un monde où chaque adolescente peut exprimer ses idées et prendre sa place, sans laisser la peur du jugement décider pour elle.</p>
+<div class="actions"><a class="button" href="talk-to-win.html">Découvrir Talk to Win ↗</a><a class="button alt" href="#mission">Comprendre notre mission ↓</a></div>
+<p style="font-size:13px;color:var(--muted);margin-top:22px">Une startup imaginée par six participantes de L-Impact. Prototype de démonstration, pas un service commercialisé.</p></div>
+<div class="visual" aria-label="Illustration d'un écran de l'application Talk to Win"><div class="halo"></div><div class="float one">✨ +50 points d'audace</div><div class="phone"><div class="pill">Talk to Win 🦋</div><h3>Ta voix.<br>Ton rythme.</h3><p>Relève un défi et prends confiance.</p><div class="mini">🎤 Premier défi : 30 secondes</div><div class="progress"><b></b></div><p>Chaque essai compte 💜</p></div><div class="float two">🏆 Niveau débloqué !</div></div>
+</section>
+<div class="band"><section id="mission">
+<span class="eyebrow">01 · Notre raison d'être</span><h2>Faire entendre toutes les idées.</h2>
+<p class="sub">À l'école, dans un groupe ou devant un public, certaines adolescentes n'osent pas prendre la parole, même lorsqu'elles ont quelque chose d'important à dire. La timidité, le manque de confiance et la peur du jugement peuvent empêcher leurs idées d'être entendues.</p>
+<div class="cards"><article class="card"><div class="emoji">🎯</div><h3>Pour qui ?</h3><p>Les adolescentes de 11 à 18 ans qui souhaitent gagner en aisance à l'oral, à leur propre rythme.</p></article><article class="card"><div class="emoji">💜</div><h3>Notre promesse</h3><p>Rendre l'entraînement à la prise de parole accessible, encourageant et amusant.</p></article><article class="card"><div class="emoji">🌱</div><h3>Notre approche</h3><p>Valoriser les essais, les progrès et le courage, sans classement humiliant ni pression à la performance.</p></article></div>
+</section></div>
+<section id="solution"><span class="eyebrow">02 · Notre produit</span><div class="grid2"><div><h2>Talk to Win : progresser en jouant.</h2><p class="sub"><strong>« Plus tu oses parler, plus tu débloques de possibilités ! »</strong></p><p class="sub">Un jeu d'expression orale avec cinq niveaux, des défis surprises, un prompteur, des récompenses virtuelles et un coach personnalisable. Chaque adolescente choisit les thèmes qui lui plaisent : sport, littérature, automobile, beauté, créativité ou découvertes.</p><div class="actions"><a class="button" href="talk-to-win.html">Essayer la démonstration →</a></div></div><div class="statement">🎤 Un défi.<br>🌟 Un pas de plus.<br>🦋 Une voix qui prend confiance.</div></div>
+<div class="cards"><article class="card"><div class="emoji">🎲</div><h3>Des défis oraux</h3><p>Parler 30 secondes, défendre un avis, débattre ou présenter son projet : cinq niveaux à explorer.</p></article><article class="card"><div class="emoji">🤖</div><h3>Un coach à son image</h3><p>Choisir un prénom, un avatar et un style d'encouragement. Dans le prototype, les conseils sont simulés.</p></article><article class="card"><div class="emoji">🫶</div><h3>Des communautés d'âge</h3><p>Trois espaces envisagés : 11–12 ans, 13–15 ans et 16–18 ans. Les échanges réels ne sont pas activés.</p></article></div>
+</section>
+<div class="band"><section id="vision"><span class="eyebrow">03 · Notre vision</span><h2>Un monde où personne ne doute de son droit à s'exprimer.</h2><p class="sub">Nous voulons que davantage de filles se sentent légitimes pour défendre leurs opinions, proposer des solutions, participer aux décisions et devenir les leaders qu'elles souhaitent être. La diversité des points de vue enrichit les discussions et les idées.</p><div class="steps"><span class="step">🗣️ Oser s'exprimer</span><span class="step">💬 Faire entendre ses idées</span><span class="step">🤝 Écouter les autres</span><span class="step">🚀 Prendre sa place</span></div></section></div>
+<section><div class="callout"><span style="font-weight:750;color:#e8d7ff">L'application de Trust in You</span><h2>Et si ton prochain défi commençait aujourd'hui ?</h2><p>Découvre Talk to Win et teste une première expérience de jeu.</p><div class="actions" style="justify-content:center"><a class="button" href="talk-to-win.html">Je relève mon premier défi →</a></div><p style="font-size:12px;margin-top:16px">Démonstration uniquement : pas d'inscription, pas de collecte de voix ou de vidéo, pas de communauté réelle.</p></div></section>
+</main><footer>Trust in You · Talk to Win · Prototype créé pendant L-Impact — Startup for Girls, octobre 2026. Aucune donnée de participante affichée.</footer>
+</body></html>
